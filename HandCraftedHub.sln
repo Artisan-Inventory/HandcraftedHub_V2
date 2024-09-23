@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35309.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandCraftedHub.API", "HandCraftedHub.API\HandCraftedHub.API.csproj", "{BE9F8507-67CB-4F43-BAEB-50633A075FE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandCraftedHub.API", "HandCraftedHub.API\HandCraftedHub.API.csproj", "{BE9F8507-67CB-4F43-BAEB-50633A075FE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandCraftedHub.BusinessObjects", "HandCraftedHub.BusinessObjects\HandCraftedHub.BusinessObjects.csproj", "{542A2E05-A607-43EC-B13C-30E15CF3D183}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandCraftedHub.BusinessObjects", "HandCraftedHub.BusinessObjects\HandCraftedHub.BusinessObjects.csproj", "{542A2E05-A607-43EC-B13C-30E15CF3D183}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandCraftedHub.Repositories", "HandCraftedHub.Repositories\HandCraftedHub.Repositories.csproj", "{672CC0E6-9EA4-4215-AAB9-B81C92E4FD77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandCraftedHub.Repositories", "HandCraftedHub.Repositories\HandCraftedHub.Repositories.csproj", "{672CC0E6-9EA4-4215-AAB9-B81C92E4FD77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandCraftedHub.Services", "HandCraftedHub.Services\HandCraftedHub.Services.csproj", "{28243A44-ECD8-454F-B585-8D2177851401}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandCraftedHub.Services", "HandCraftedHub.Services\HandCraftedHub.Services.csproj", "{28243A44-ECD8-454F-B585-8D2177851401}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandCraftedHub.UnitTests", "HandCraftedHub.UnitTests\HandCraftedHub.UnitTests.csproj", "{EF7B876D-4084-4B17-9FA1-7C7F1840986B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandCraftedHub.UnitTests", "HandCraftedHub.UnitTests\HandCraftedHub.UnitTests.csproj", "{EF7B876D-4084-4B17-9FA1-7C7F1840986B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0A7EA2E1-83AF-4831-8248-8B473B0B7670}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile1.txt = TextFile1.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

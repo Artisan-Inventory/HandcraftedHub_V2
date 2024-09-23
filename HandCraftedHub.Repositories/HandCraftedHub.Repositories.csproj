@@ -11,4 +11,8 @@
     <Folder Include="Implementation\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HandCraftedHub.BusinessObjects\HandCraftedHub.BusinessObjects.csproj" />
+  </ItemGroup>
+
 </Project>

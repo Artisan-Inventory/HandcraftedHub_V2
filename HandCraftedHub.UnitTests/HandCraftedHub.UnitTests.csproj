@@ -17,6 +17,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HandCraftedHub.API\HandCraftedHub.API.csproj" />
+    <ProjectReference Include="..\HandCraftedHub.BusinessObjects\HandCraftedHub.BusinessObjects.csproj" />
+    <ProjectReference Include="..\HandCraftedHub.Repositories\HandCraftedHub.Repositories.csproj" />
+    <ProjectReference Include="..\HandCraftedHub.Services\HandCraftedHub.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>
 

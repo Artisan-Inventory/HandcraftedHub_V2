@@ -11,4 +11,8 @@
     <Folder Include="Implementation\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HandCraftedHub.Repositories\HandCraftedHub.Repositories.csproj" />
+  </ItemGroup>
+
 </Project>

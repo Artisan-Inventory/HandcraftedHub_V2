@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace XuongMay.Contract.Repositories.Entity;
+namespace HandCraftedHub.BusinessObjects.Entities;
 
 public class Account
 {

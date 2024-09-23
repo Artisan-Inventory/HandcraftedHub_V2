@@ -1,6 +1,4 @@
-﻿using XuongMay.Core.Base;
-
-namespace XuongMay.Contract.Repositories.Entity
+﻿namespace HandCraftedHub.BusinessObjects.Entities
 {
     public class Salary : BaseEntity
     {

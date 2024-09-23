@@ -1,10 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace XuongMay.Contract.Repositories.Entity;
+namespace HandCraftedHub.BusinessObjects.Entities;
 
 public class StatusChange
 {
+    [Key]
     [MaxLength(50)] public required string StatusChangeId { get; set; }
+    [ForeignKey("Order")]
     [MaxLength(50)] public required string OrderId { get; set; }
     public DateTime ChangeTime { get; set; }
     [MaxLength(255)] public string? Status { get; set; }

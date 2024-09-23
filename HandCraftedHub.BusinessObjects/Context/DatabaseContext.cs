@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using XuongMay.Contract.Repositories.Entity;
-using XuongMay.Repositories.Entity;
 using System;
+using HandCraftedHub.BusinessObjects.Entities;
 using Microsoft.Extensions.Configuration;
 
 namespace XuongMay.Repositories.Context

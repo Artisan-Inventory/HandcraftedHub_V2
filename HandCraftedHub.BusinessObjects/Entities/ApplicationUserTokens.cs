@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using XuongMay.Core.Utils;
 
-namespace XuongMay.Contract.Repositories.Entity
+namespace HandCraftedHub.BusinessObjects.Entities
 {
     public class ApplicationUserTokens : IdentityUserToken<Guid>
     {

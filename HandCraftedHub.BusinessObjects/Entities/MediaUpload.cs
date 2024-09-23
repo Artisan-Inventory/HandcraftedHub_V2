@@ -1,18 +1,24 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using XuongMay.Repositories.Entity;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace XuongMay.Contract.Repositories.Entity;
+namespace HandCraftedHub.BusinessObjects.Entities;
 
 public class MediaUpload
 {
-    [MaxLength(50)] public required string MediaUploadId { get; set; }
-    [MaxLength(50)] public required string UserId { get; set; }
+    [Key]
+
+    [MaxLength(50)]
+    public required string MediaUploadId { get; set; }
+    [ForeignKey("ApplicationUser")]
+    [MaxLength(50)] 
+    public required Guid UserId { get; set; }
+    [ForeignKey("Category")]
+    [MaxLength(50)]
+    public required string CategoryId { get; set; }
     [MaxLength(255)] public string? Url { get; set; }
     public Boolean IsMain { get; set; }
-    [MaxLength(50)] public required string ProductId { get; set; }
-
+    
     // Navigation properties
-    // public virtual User? User { get; set; }
-    public virtual Product? Product { get; set; }
     public virtual ApplicationUser? User { get; set; }
+    public virtual Category? Category { get; set; }
 }

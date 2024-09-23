@@ -1,15 +1,20 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace XuongMay.Contract.Repositories.Entity;
+namespace HandCraftedHub.BusinessObjects.Entities;
 
 public class Payment
 {
-    [MaxLength(50)] public required string PaymentId { get; set; }
-    [MaxLength(50)] public required string OrderId { get; set; }
-    public DateTime CreateDateTime { get; set; }
-    public DateTime ExpirationDateTime { get; set; }
+    [Key]
+    [MaxLength(50)] 
+    public required string PaymentId { get; set; }
+    [MaxLength(50)]
+    [ForeignKey("Order")]
+    public required string OrderId { get; set; }
+    public DateTime CreateDate { get; set; }
+    public DateTime ExpirationDate { get; set; }
     public float TotalAmount { get; set; }
-    [MaxLength(50)] public required string PaymentDetailId { get; set; }
+    
     
     
     // Navigation properties

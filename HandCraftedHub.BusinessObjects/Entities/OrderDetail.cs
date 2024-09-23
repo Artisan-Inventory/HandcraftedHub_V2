@@ -1,17 +1,20 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace XuongMay.Contract.Repositories.Entity;
+namespace HandCraftedHub.BusinessObjects.Entities;
 
 public class OrderDetail
 {
-    [MaxLength(50)] public required string OrderDetailId { get; set; }
-    [MaxLength(50)] public required string OrderId { get; set; }
-    [MaxLength(255)] public string? Address { get; set; }
-    [MaxLength(255)] public string? CustomerName { get; set; }
-    [MaxLength(15)] public string? Phone { get; set; }
-    [MaxLength(255)] public string? Note { get; set; }
-    [MaxLength(50)] public required string CancleReasonId { get; set; }
-    [MaxLength(50)] public required string ProductId { get; set; }
+    [Key]
+    [MaxLength(50)] 
+    public required string OrderDetailId { get; set; }
+    [ForeignKey("Order")]
+    [MaxLength(50)] 
+    public required string OrderId { get; set; }
+ 
+    [MaxLength(50)]
+    [ForeignKey("Product")]
+    public required string ProductId { get; set; }
     public int ProductQuantity { get; set; }
     public float ProductPrice { get; set; }
 

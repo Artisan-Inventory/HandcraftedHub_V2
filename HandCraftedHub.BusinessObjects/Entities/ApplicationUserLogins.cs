@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity;
-using XuongMay.Core.Utils;
+﻿using HandCraftedHub.BusinessObjects.Utils;
+using Microsoft.AspNetCore.Identity;
 
-namespace XuongMay.Contract.Repositories.Entity
+namespace HandCraftedHub.BusinessObjects.Entities
 {
     public class ApplicationUserLogins : IdentityUserLogin<Guid>
     {

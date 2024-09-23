@@ -1,8 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using XuongMay.Repositories.Entity;
 
-namespace XuongMay.Contract.Repositories.Entity;
+namespace HandCraftedHub.BusinessObjects.Entities;
 
 public class Shop
 {
@@ -10,7 +8,7 @@ public class Shop
     [MaxLength(50)] public required Guid UserId { get; set; }
     [MaxLength(255)] public string? ShopName { get; set; }
     [MaxLength(255)] public string? Description { get; set; }
-    public int Rating { get; set; }
+    public float Rating { get; set; }
     
     
     // Navigation properties

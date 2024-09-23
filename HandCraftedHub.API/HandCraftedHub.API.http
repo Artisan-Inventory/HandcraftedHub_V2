@@ -1,0 +1,6 @@
+@HandCraftedHub.API_HostAddress = http://localhost:5225
+
+GET {{HandCraftedHub.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
